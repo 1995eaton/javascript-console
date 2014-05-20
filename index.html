@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+html, body, input {
+  font-family: monospace;
+  font-size: 9pt;
+}
+#results {
+  z-index: 99;
+  position: absolute;
+  top: 35px;
+  width: 500px;
+  max-height: 216px;
+  overflow-y: auto;
+  background-color: #ddd;
+  box-sizing: border-box;
+  padding: 0;
+  display: none;
+  border-radius: 2px;
+  left: 5%;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+#output {
+  position: absolute;
+  width: 90%;
+  margin: 0 auto;
+  top: 25px;
+  left: 0; right: 0;
+
+}
+#results div {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 0;
+}
+#input {
+  position: absolute;
+  left: 0;
+  width: 90%;
+  margin: 0 auto;
+  left: 0; right: 0;
+}
+</style>
+  <script src="./autocomplete.js"></script>
+  <script src="./main.js"></script>
+</head>
+<body>
+<input type="text" spellcheck="false" id="input">
+<div id="results"></div>
+<div id="output"></div>
+</body>
+</html>
