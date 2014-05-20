@@ -61,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
           first = "";
         }
         var i = input.value.replace(/.*[ \(\){},:;]/, "");
-        if (/\.([a-zA-Z0-9]+)?$/.test(i)) {
-          input.value = first + i.replace(/\.([^.]+)?$/, "") + "." + _res[cindex];
+        if (/\.[a-zA-Z0-9]*$/.test(i)) {
+          input.value = first + i.replace(/\.[^.]*$/, "") + "." + _res[cindex];
         } else {
           input.value = first + _res[cindex];
         }
